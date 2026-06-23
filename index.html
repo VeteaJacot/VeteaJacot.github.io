@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMO-SCI project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">EMO-SCI project</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Publications.html">Publications</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li class="lang-switch-desktop">
+                <a href="#" id="lang-link-desktop">
+                    <img id="lang-flag-desktop" src="" alt="Cliquez ici pour changer de langue vers le français" class="flag-icon">
+                </a>
+            </li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav" style="transform: translateX(-105%);">
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Publications.html">Publications</a></li>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li class="lang-switch-mobile">
+                <a href="#" id="lang-link-mobile">
+                    <img id="lang-flag-mobile" src="" alt="Cliquez ici pour changer de langue vers le français" class="flag-icon">
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+</nav>
+
+<main>
+    <section class="content" id="Intro">
+        <article class="card">
+            <div class="card-container">
+                <header>
+                    <h1><b>Welcome to the EMO-SCI project website!</b></h1>
+                </header>
+                <p>Online coonversations nowadays often use claims based on scientific informations or references to scientific studies to push a certain viewpoint. This informal scientific discourse is sadly sometimes used to push misinformation or manipulative narratives, which can have very harmful effects on our society as shown during the COVID crisis. This informal scientific misinformation includes distorsions of the original study's scientific information, through (over-)simplification our recontextualization. These distorsions, combined with a lack of reference links to the original study, can make the verification at the source more difficult for other users of a social media or for fact-checkers.</p>
+                <p>Emotions like fear or anger play an important role in the propagation of misinformation, especially during societal crises. However, the role of emotions remains under-studied in the context of scientific claims and references in informal online discussions. It is important to study the links between emotions and scientific studies distorsions in online conversations, in order to better understand this type of misinformation polluting the public discourse.</p>
+		<p>The ANR-funded EMO-SCI project includes two french laboratories (Montpellier's LIRMM and Nice's I3S) and two german universities (Düsseldorf's Heinrich-Heine university and Trier's university). This project studies the interactions between emotions and online informal scientific discourse through multiple angles:</p>
+                <dl>
+                    <dd>Emotion detection in online informal scientific discourse: scientific claims and references are included in conversations and debates between multiple users which can be lengthy and might contain a lot of interesting context for the catgorisation of the emotions of a message. Classical analyses tend to classify each message individually in a coarse-grained category, not taking into account the conversation's context. This research axis will try to use a dimensional emotion model, more fine-grained than categorical models, to establish emotional annotation methods which would take into account the conversational context. Automatic annotation methods using AI methods will also be established. This angle will enable retrieving fine-grained information on the emotions contained in an online conversation in order to study the link with the other variables of the project.</dd>
+		    <dd>Identification and classification of scientific information distorsions types: while research project have already studied the distorsion of scientific results (among others through exaggeration, generalisation, or deformation of the causal link), this domain remains under-studied, including in the specific context of online conversations. This angle strives to categorize these distorsions and to establish methods to identify them in social media messages or chatbot AIs interactions.</dd>
+                    <dd>Analysis of the link between emotions and scientific distorsions in online conversations: through statistical analyses and user studies, this axis will establish a link between emotions found in online conversations and the distorsion of scientific results mentionned. This axis will work towards a better comprehension of informal science discussions in the online public discourse.</dd>
+                </dl>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer class="page-footer">
+        <img class="logo" src="./rsc/ANR.jpg", alt="Funded by the french national research agency (Agence Nationale de la Recherche (ANR))", height="90", width="237">
+        <img class="logo" src="./rsc/DFG.gif", alt="Funded by the german research foundation (Deutsche Forschungsgemeinschaft (DFG))", height="90", width="356">
+        <img class="logo" src="./rsc/uni.png", alt="In collaboration with the university of Montpellier", height="90", width="90">
+        <img class="logo" src="./rsc/LOGO_CNRS_BLEU.png", alt="In collaboration with the french national center for scientific research (centre national de la recherche scientifique (CNRS))", height="90", width="90">
+        <img class="logo" src="./rsc/LIRMM.png", height="90", alt="In collaboration with the LIRMM laboratory of Montpellier", width="262">
+        <img class="logo" src="./rsc/HHU.png", height="90", alt="In collaboration with Heinrich-Heine university of Düsseldorf", width="236">
+        <img class="logo" src="./rsc/I3S.png", height="90", alt="In collaboration with the i3S laboratory of Nice Sophia Antipolis ", width="90">
+        <img class="logo" src="./rsc/UCA-Logo-3niveaux-RVB.png", alt="In collaboration with the Côte-d'azur university", height="90", width="106">
+        <img class="logo" src="./rsc/UTR_Logo.png", height="90", alt="In collaboration with the university of Trier", width="199">
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>

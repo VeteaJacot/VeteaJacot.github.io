@@ -1,0 +1,175 @@
+.nav-wrapper, .page-footer, nav{
+    background-color: #9c81c6;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* space between images */
+}
+
+.page-footer a {
+    color: ghostwhite;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: #dbcdf9;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-wrapper {
+   width: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.card {
+    background-color: ghostwhite;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
+    margin: 5% auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.card article{
+    margin: auto;
+}
+
+article .card-container, article .card-image, article header{
+    margin: auto;
+    text-align: justify;
+}
+
+.card-container h4{
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%; /* Place que prendra le texte dans la card */
+}
+
+.card-container p {
+    margin-top: 10px;
+}
+
+.card-image {
+    width: 30%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-container .row {
+    margin-bottom: 20px;
+}
+
+.card-container .col {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-container img {
+    max-width: 500%;
+    width:250px;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 5px;
+}
+
+.profilepicture {
+    width: 200px;
+}
+
+dd {
+    display: list-item;
+    list-style-type: square;
+    padding-inline-start: 1ch;
+    padding: 5px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;          /* Stack on mobile */
+    margin-top: 20px;
+}
+
+.col {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 20px;
+    min-width: 250px;         /* Prevent columns from getting too narrow */
+}
+
+@media (max-width: 600px) {
+    .columns-container {
+        flex-direction: column;
+        align-items: center;    /* Center stacked items */
+    }
+}
+
+.flag-icon {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-top: -3px;
+    border: 1px solid #ddd;
+}
+
+nav ul li.lang-switch-desktop {
+    padding-left: 15px;
+}
+
+.sidenav li.lang-switch-mobile {
+    padding: 0 32px;
+    margin-top: 8px;
+}
+
+.sidenav li.lang-switch-mobile a {
+    padding: 0;
+    display: inline-block;
+}
+
+/* Add this inside your <style> tag */
+#toast-notification {
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none; /* Allows clicking through it */
+    z-index: 50;
+}
