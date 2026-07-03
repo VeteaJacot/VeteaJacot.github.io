@@ -2,6 +2,12 @@
     background-color: #9c81c6;
 }
 
+.page-footer .logo {                                                                                                                                                                                  
+max-height: 80px;   /* adjust as desired */                                                                                                                                                       
+width: auto;                                                                                                                                                                                      
+height: auto;                                                                                                                                                                                     
+}
+
 .page-footer {
     display: flex;
     justify-content: center;
@@ -68,7 +74,7 @@ article .card-container, article .card-image, article header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%; /* Place que prendra le texte dans la card */
+    width: 90%; /* Place que prendra le texte dans la card */
 }
 
 .card-container p {
@@ -76,7 +82,7 @@ article .card-container, article .card-image, article header{
 }
 
 .card-image {
-    width: 30%;
+    width: 10%;
     height: 100%;
 }
 
@@ -98,7 +104,7 @@ article .card-container, article .card-image, article header{
 
 .card-container img {
     max-width: 500%;
-    width:250px;
+    width:200px;
     height: auto;
 }
 
